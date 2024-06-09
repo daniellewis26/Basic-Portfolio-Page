@@ -1,0 +1,158 @@
+body {
+	font-family: 'Alkatra', cursive;
+	background: #EFCFA0;
+	color: #001f3f;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Playfair Display', serif;
+}
+
+.quote {
+	font-style: italic;
+}
+
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+.container > div {
+	margin:  0 auto;
+}
+.intro {
+	text-align: center;
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.i-am, .i-like {
+	text-align:center;
+	text-decoration: none;
+}
+
+.about-list {
+	list-style: none;
+	padding: 0;
+}
+
+.Design-heading {
+	text-align: center;
+}
+
+.Design-grid {
+	display:grid;
+	grid-template-columns: 20% 70% 10%;
+}
+
+.design-image {
+	border-radius: 5px;
+	box-shadow:0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+}
+
+.design-image:hover {
+	filter: brightness(.75);
+	box-shadow: 0 8px 12px 0 rgba(34, 60,80 .16);
+}
+
+.Design-image-wrapper {
+	justify-self: center;
+	padding: 4%;
+	position: relative;
+}
+
+.Design-image-wrapper:hover >h4 {
+	visibility: visible;
+}
+
+.Design-image-wrapper >h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2rem; /* Change the font size to make the words bigger */
+	color: royalblue;
+	background-color: rgba(0, 0, 0, 0.8); /* Set the background color to a dark shade */
+	padding: 18px; /* Add padding to create a box around the words */
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2s;
+}
+
+.links-and-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left side;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: left side;
+  align-items: left side; 
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.links-list li {
+  margin: 0 10px;
+}
+
+.profile-picture {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+}
+
+.profile-picture:hover {
+	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+}
+
+form input, textarea {
+	padding: 5px;
+	border-radius: 5px;
+	width: 240px;
+}
+
+form {
+	width: 250px;
+	margin: 0 auto;
+}
+
+form-input[type="submit"] {
+	width: 250px;
+}
+
+.submit-button-wrapper {
+	margin: 20px 0;
+}
+
+@media (max-width: 480px) {
+	.about-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+@media (max-width: 650px) {
+	.links-and-contact {
+		grid-template-columns: 100%}
+}
+
+.links-and-contact {
+	grid-template-columns: 100;
+}
+  
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
